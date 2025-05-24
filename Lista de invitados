@@ -1,0 +1,19 @@
+def amigos(NombreAmigo, ApellidoAmigo, NombreCompleto):
+    NombreAmigo = input("¿Cual es el nombre de tu amigo?: ")
+    ApellidoAmigo = input("¿Cual es el apellido de tu amigo?")
+    NombreCompleto = (NombreAmigo + " " + ApellidoAmigo)
+    AmigosInvitados.append(NombreCompleto)
+
+AmigosInvitados = []
+print ("¡Bienvenido a tu lista de invitados!")
+while True :
+    add = int(input("Deseas agregar mas amigos? 1: Si 2: No 3: Ver Lista de amigos"))
+    if add == 1 or add == "si":
+        NombreAmigo = ""
+        ApellidoAmigo = ""
+        NombreCompleto = ""
+        amigos(NombreAmigo, ApellidoAmigo, NombreCompleto)
+    elif add == 2 :
+        break
+    elif add == 3 :
+        print (AmigosInvitados)
